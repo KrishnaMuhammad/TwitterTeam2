@@ -1,4 +1,8 @@
 from flask import Flask
+<<<<<<< HEAD
+=======
+from flask import request
+>>>>>>> request
 
 app = Flask(__name__)
 
@@ -17,3 +21,19 @@ def about():
 if __name__=='__main__':
 
     app.run(debug=True)
+<<<<<<< HEAD
+=======
+
+@app.route('/')
+def home():
+
+    # if request has args (?tweet=some_tweet)
+    if request.args:
+
+        # get the value of the arg
+        tweet = request.args.get('tweet')   
+        
+        return tweet
+
+    return 'Hello World!'
+>>>>>>> request
