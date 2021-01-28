@@ -76,6 +76,15 @@ def about():
     Fill in some info about the project here.
     """
     return about_text
+
+
+@app.route('/contact-us')
+def contact():
+
+    contact = """
+    Call us at 555-555-5555
+    """
+    return contact
     
 if __name__=='__main__':
 
